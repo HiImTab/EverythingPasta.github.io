@@ -5,7 +5,7 @@ const sliders = document.querySelectorAll('.sliders');
 const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
 
     entries.forEach(entry => {
-        //don't do anything if not intersecting
+        //don't do anything if not intersecting(not in viewport/not on page)
         if(!entry.isIntersecting) {
             return;
         }
